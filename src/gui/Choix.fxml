@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="248.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ChoixController">
+   <children>
+      <ImageView fitHeight="267.0" fitWidth="534.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hero-background-generic-v2.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="62.0" layoutY="21.0" prefHeight="185.0" prefWidth="407.0" spacing="50.0">
+         <children>
+            <VBox prefHeight="198.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="154.0" fitWidth="150.0" onMouseClicked="#SuivieCommande" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/excel-et-numbers-un-tableur-tableau-icone-5686-128.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="194.0" text="Suivie Commande" textFill="#dab41c">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="153.0" fitWidth="161.0" onMouseClicked="#AjouterProduit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/falcontech.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="62.0" prefWidth="162.0" text="Ajouter Produit" textFill="#eed111">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

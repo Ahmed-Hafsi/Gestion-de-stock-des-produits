@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="229.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AcceuilController">
+   <children>
+      <ImageView fitHeight="248.0" fitWidth="500.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hero-background-generic-v2.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="48.0" layoutY="32.0" prefHeight="166.0" prefWidth="408.0" spacing="30.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="111.0" onMouseClicked="#AddPersonel" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/forum-des-personnes-utilisateurs-icone-3717-128.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="47.0" prefWidth="111.0" text="Personnel" textAlignment="JUSTIFY" textFill="#d09a25">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="111.0" onMouseClicked="#Stock" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/warehouse(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="112.0" text="    Stock" textFill="#ddae2a">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="166.0" prefWidth="134.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="111.0" onMouseClicked="#PasserCommande" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ajouter-shoppingbasket-icone-6180-128.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="129.0" text="Commande" textFill="#e4bb25">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

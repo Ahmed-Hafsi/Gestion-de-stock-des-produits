@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="989.0" style="-fx-background-color: #84E2E5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ListCommandeController">
+   <children>
+      <TableView fx:id="tab" layoutX="44.0" layoutY="92.0" onMouseClicked="#handleMouseAction" prefHeight="189.0" prefWidth="901.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_id_agent" prefWidth="75.0" text="idAgent" />
+            <TableColumn fx:id="col_id_produit1" prefWidth="75.0" text="idProduit1" />
+            <TableColumn fx:id="col_quantite1" prefWidth="75.0" text="quantite" />
+            <TableColumn fx:id="col_id_produit2" prefWidth="75.0" text="idProduit2" />
+            <TableColumn fx:id="col_quantite2" prefWidth="75.0" text="quantite" />
+            <TableColumn fx:id="col_id_produit3" prefWidth="75.0" text="idProduit3" />
+            <TableColumn fx:id="col_quantite3" prefWidth="75.0" text="quantite" />
+            <TableColumn fx:id="col_id_produit4" prefWidth="75.0" text="idProduit4" />
+            <TableColumn fx:id="col_quantite4" prefWidth="75.0" text="quantite" />
+            <TableColumn fx:id="col_id_produit5" prefWidth="75.0" text="idProduit5" />
+            <TableColumn fx:id="col_quantite5" prefWidth="75.0" text="quantite" />
+        </columns>
+      </TableView>
+      <Label layoutX="330.0" layoutY="26.0" text="List des Commande" textFill="#907427">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="44.0" layoutY="300.0" prefHeight="30.0" prefWidth="276.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtid" prefHeight="30.0" prefWidth="149.0" promptText="Saisie l'id " />
+            <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#supprimer" text="Supprimer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/annuler-icone-6802-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="wrongmsg" layoutX="44.0" layoutY="335.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <TextField fx:id="txtsearch" layoutX="419.0" layoutY="303.0" prefHeight="30.0" prefWidth="149.0" promptText="Search id/idAgent" />
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="571.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/viewmag--icone-5948-32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
